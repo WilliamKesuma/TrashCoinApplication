@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling Incentive System</title>
+</head>
+<body>
+    <h1>Recycling Incentive System</h1>
+    <button id="connect">Connect Wallet</button>
+    <p id="walletAddress">Wallet: Not connected</p>
+    <p id="tokenBalance">Token Balance: 0</p>
+    
+    <h3>Transfer Tokens</h3>
+    <input type="text" id="recipient" placeholder="Recipient Address">
+    <input type="number" id="amount" placeholder="Amount">
+    <button id="transfer">Transfer</button>
+    
+    <h3>Deposit Trash</h3>
+    <select id="materialType">
+        <option value="0">Plastic</option>
+        <option value="1">Glass</option>
+        <option value="2">Metal</option>
+        <option value="3">Paper</option>
+    </select>
+    <input type="number" id="trashWeight" placeholder="Trash Weight">
+    <button id="depositTrash">Deposit Trash</button>
+
+    <script src="web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
